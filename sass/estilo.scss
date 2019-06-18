@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+$cor-1: #0062b2;
+$cor-2: #2b4165;
+
+$cor-3: #ffb200;
+$cor-4: #00b2f5;
+$cor-5: #00c900;
+$cor-6: #ff0b17;
+
+$cor-branca: #fff;
+$cor-preta: #000;
+
+@import "./componentes/cabecalho";
+@import "./componentes/pagina";

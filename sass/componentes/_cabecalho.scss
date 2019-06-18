@@ -1,0 +1,56 @@
+.cabecalho {
+  background: $cor-branca;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho__container-primario {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho__botao-hamburguer {
+  height: 48px;
+  width: 48px;
+  background-color: rgba($cor-1, 0.05);
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  cursor: pointer;
+  &:hover, &:focus {
+    background-color: rgba($cor-1, 0.15);
+  }
+}
+
+.cabecalho__logo {
+  padding-right: 16px;
+  height: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  img {
+    height: 100%;
+  }
+}
+
+
+.cabecalho__descricao {
+  border-left: 2px solid $cor-2;
+  padding-left: 16px;
+  color: $cor-2;
+  
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

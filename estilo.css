@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
+
+.cabecalho {
+  background: #fff;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.cabecalho__container-primario {
+  display: flex;
+  align-items: center; }
+
+.cabecalho__botao-hamburguer {
+  height: 48px;
+  width: 48px;
+  background-color: rgba(0, 98, 178, 0.05);
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  cursor: pointer; }
+  .cabecalho__botao-hamburguer:hover, .cabecalho__botao-hamburguer:focus {
+    background-color: rgba(0, 98, 178, 0.15); }
+
+.cabecalho__logo {
+  padding-right: 16px;
+  height: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .cabecalho__logo img {
+    height: 100%; }
+
+.cabecalho__descricao {
+  border-left: 2px solid #2b4165;
+  padding-left: 16px;
+  color: #2b4165; }
+  .cabecalho__descricao h2 {
+    font-size: 16px;
+    font-weight: 700; }
+  .cabecalho__descricao p {
+    font-size: 14px;
+    font-weight: 400; }
+
+.pagina {
+  background-color: rgba(0, 98, 178, 0.05); }
+
+.cor-top {
+  fill: #0062b2; }
