@@ -13,27 +13,49 @@
   <header class="cabecalho">
     <div class="cabecalho__container-primario">
       <button class="cabecalho__botao-hamburguer">
-        <img src="./icones/hamburguer.svg" alt="">
+        <img src="./icones/hamburguer.svg" aria-hidden="true">
       </button>
       <a class="cabecalho__logo">
-        <img src="./icones/logo-professus.svg" alt="Abrir menu lateral">
+        <img src="./icones/logo-professus.svg" aria-hidden="true">
       </a>
       <div class="cabecalho__descricao">
         <h2>DESENVOLVIMENTO (DESENVOLVIMENTO)</h2>
         <p>18032 - Ano Letivo 2019</p>
       </div>
     </div>
+
     <div class="cabecalho__container-secundario">
       <div class="cabecalho__usuario">
-        <span class="cabecalho__icone-usuario"></span>
-        <h3 class="cabecalho__nome-usuario">Thiago Menezes</h3>
-        <p>3312 - Professor</p>
+        <span class="cabecalho__icone-usuario">
+          <img src="/icones/perfil.svg">
+        </span>
+        <div class="cabecalho__usuario-informacoes">
+          <h3 class="cabecalho__nome-usuario">Thiago Menezes</h3>
+          <p class="cabecalho__usuario-descricao">3312 - Professor</p>
+        </div>
       </div>
       <button class="cabecalho__botao-sair">
-        <i class="icone-sair"></i> Sair
+        <img src="./icones/sair.svg"> Sair
       </button>
     </div>
   </header>
+
+  <div class="menu-lateral">
+    <div class="menu-lateral__cabecalho">
+      <img src="./icones/logo-professus-branca.svg" aria-hidden="true">
+    </div>
+
+    <nav class="menu__lateral_itens">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./icones/sair.svg" aria-hidden="true">
+            Matrícula
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </body>
 
 </html>

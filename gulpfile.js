@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var browserSync = require('browser-sync').create();
+var reload = browserSync.reload;
 
 sass.compiler = require('node-sass');
 
@@ -9,6 +11,12 @@ gulp.task('sass', () => {
     .pipe(gulp.dest('./'))
 });
 
-gulp.task('sass:watch', () => {
-  gulp.watch('./sass/**/*.scss', ['sass'])
+gulp.task('default', ['sass'], function () {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    }
+  });
+
+  return gulp.watch(['./sass/**/*.scss', 'index.html'], ['sass']).on('change', reload);
 });
