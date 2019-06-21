@@ -1,0 +1,53 @@
+.menu-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.menu-usuario__icone-usuario {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: $cor-2;
+  margin-right: 8px;
+}
+
+.menu-usuario__nome-usuario {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.menu-usuario__usuario-descricao {
+  font-size: 14px;
+}
+
+.menu-usuario__botao-sair {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  margin: auto 8px;
+  border-radius: 24px;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: rgba($cor-1, 0.05);
+  }
+  &:active {
+    position: relative;
+    top: -2px;
+  }
+  img {
+    margin-right: 8px;
+    height: 16px;
+  }
+}

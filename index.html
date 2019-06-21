@@ -10,9 +10,19 @@
 </head>
 
 <body class="pagina">
+  <script>
+    document.onkeydown = function (evt) {
+      evt = evt || window.event;
+      if (evt.keyCode == 27) {
+        document.getElementsByClassName('menu-lateral')[0].classList.remove('menu-lateral_ativo')
+      }
+    };
+  </script>
+
   <header class="cabecalho">
     <div class="cabecalho__container-primario">
-      <button class="cabecalho__botao-hamburguer">
+      <button class="cabecalho__botao-hamburguer"
+        onclick="document.getElementsByClassName('menu-lateral')[0].classList.add('menu-lateral_ativo')">
         <img src="./icones/hamburguer.svg" aria-hidden="true">
       </button>
       <a class="cabecalho__logo">
@@ -25,36 +35,76 @@
     </div>
 
     <div class="cabecalho__container-secundario">
-      <div class="cabecalho__usuario">
-        <span class="cabecalho__icone-usuario">
+      <div class="menu-usuario">
+        <span class="menu-usuario__icone-usuario">
           <img src="/icones/perfil.svg">
         </span>
-        <div class="cabecalho__usuario-informacoes">
-          <h3 class="cabecalho__nome-usuario">Thiago Menezes</h3>
-          <p class="cabecalho__usuario-descricao">3312 - Professor</p>
+        <div class="menu-usuario__usuario-informacoes">
+          <h3 class="menu-usuario__nome-usuario">Thiago Menezes</h3>
+          <p class="menu-usuario__usuario-descricao">3312 - Professor</p>
         </div>
       </div>
-      <button class="cabecalho__botao-sair">
+      <button class="menu-usuario__botao-sair">
         <img src="./icones/sair.svg"> Sair
       </button>
     </div>
   </header>
 
+  <div class="menu-inicial">
+
+  </div>
+
+  <footer class="rodape">
+
+  </footer>
+
   <div class="menu-lateral">
     <div class="menu-lateral__cabecalho">
-      <img src="./icones/logo-professus-branca.svg" aria-hidden="true">
+      <img class="menu-lateral__logo-cabecalho" src="./icones/logo-professus-branca.svg" aria-hidden="true">
+      <button class="menu-lateral__botao-fechar"
+        onclick="document.getElementsByClassName('menu-lateral')[0].classList.remove('menu-lateral_ativo')">
+        <img src="./icones/x.svg" aria-hidden="true">
+      </button>
     </div>
 
-    <nav class="menu__lateral_itens">
-      <ul>
-        <li>
+    <nav class="menu-lateral__container">
+      <ul class="menu-lateral__itens-do-menu">
+        <li class="menu-lateral__item">
           <a href="#">
-            <img src="./icones/sair.svg" aria-hidden="true">
-            Matrícula
+            <img src="icones/notas-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Notas
+          </a>
+        </li>
+        <li class="menu-lateral__item menu-lateral__item_ativo">
+          <a href="#">
+            <img src="icones/notas-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Notas
           </a>
         </li>
       </ul>
+
+      <div class="menu-lateral__container-usuario">
+        <div class="menu-lateral__descricao-instituicao">
+          <h2>DESENVOLVIMENTO (DESENVOLVIMENTO)</h2>
+          <p>18032 - Ano Letivo 2019</p>
+        </div>
+        <div class="menu-usuario">
+          <span class="menu-usuario__icone-usuario">
+            <img src="/icones/perfil.svg">
+          </span>
+          <div class="menu-usuario__usuario-informacoes">
+            <h3 class="menu-usuario__nome-usuario">Thiago Menezes</h3>
+            <p class="menu-usuario__usuario-descricao">3312 - Professor</p>
+          </div>
+        </div>
+        <button class="menu-usuario__botao-sair">
+          <img src="./icones/sair-b.svg"> Sair
+        </button>
+      </div>
     </nav>
+  </div>
+  <div class="menu-lateral__sobreposicao"
+    onclick="document.getElementsByClassName('menu-lateral')[0].classList.remove('menu-lateral_ativo')">
   </div>
 </body>
 
