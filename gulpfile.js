@@ -21,9 +21,10 @@ gulp.task('sass', () => {
 gulp.task('default', ['css'], function () {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: './',
+      index: "acesso-aluno.html"
     }
   });
 
-  return gulp.watch(['./sass/**/*.scss', 'index.html'], ['css']).on('change', reload);
+  return gulp.watch(['./sass/**/*.scss', './ativos/js/*.js', '*.html', './src/*.html'], ['css']).on('change', reload);
 });

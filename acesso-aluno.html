@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./ativos/css/estilo.css">
+  <link rel="shortcut icon" href="./ativos/icones/favicon.png" />
+  <script src="./ativos/js/menu-lateral.js"></script>
+  <script src="./ativos/js/incluir-html.js"></script>
+  <title>Professus</title>
+</head>
+
+<body class="pagina">
+  <header incluir-html="src/cabecalho.html" class="cabecalho"></header>
+
+  <div class="menu-inicial">
+    <ul class="menu-inicial__itens">
+      <li class="menu-inicial__item">
+        <a href="acesso-professor.html" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/rematricula.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Rematrícula
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/boletim-mensal.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Boletim mensal
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/boletim-bimestral.svg" aria-hidden="true"
+            class="menu-inicial__icone-item">
+          Boletim bismestral
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/conteudos.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Conteúdos
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/tarefa.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Tarefa
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/financeiro.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Financeiro aluno
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/ocorrencias.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Ocorrências
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/upload.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Upload
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/recados.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Recados
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/biblioteca.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Biblioteca
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/parecer.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Parecer (Aluno)
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/protocolo.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Protocolo
+        </a>
+      </li>
+      <li class="menu-inicial__item">
+        <a href="#" class="menu-inicial__link">
+          <img src="ativos/icones/acesso-aluno/estudos.svg" aria-hidden="true" class="menu-inicial__icone-item">
+          Área de estudos
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="menu-lateral menu-lateral_aluno">
+    <div class="menu-lateral__cabecalho">
+      <img class="menu-lateral__logo-cabecalho" src="./ativos/icones/logo-professus-branca.svg" aria-hidden="true">
+      <button class="menu-lateral__botao-fechar" onclick="fecharMenuLateral()">
+        <img src="./ativos/icones/x.svg" aria-hidden="true">
+      </button>
+    </div>
+
+    <nav class="menu-lateral__container">
+      <ul class="menu-lateral__itens-do-menu">
+        <li class="menu-lateral__item menu-lateral__item_ativo">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/rematricula-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Rematricula
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/boletim-mensal-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Boletim mensal
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/boletim-bimestral-b.svg" class="menu-lateral__icone"
+              aria-hidden="true">
+            Boletim bimestral
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/conteudos-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Conteúdos
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/tarefa-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Tarefa
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/financeiro-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Financeiro
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/ocorrencias-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Ocorrências
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/upload-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Upload
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/recados-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Recados
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/biblioteca-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Biblioteca
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/parecer-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Parecer (Aluno)
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/protocolo-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Protocolo
+          </a>
+        </li>
+        <li class="menu-lateral__item">
+          <a href="#">
+            <img src="ativos/icones/acesso-aluno/estudos-b.svg" class="menu-lateral__icone" aria-hidden="true">
+            Área de estudos
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu-lateral__container-usuario">
+        <div class="menu-lateral__descricao-instituicao">
+          <h2>DESENVOLVIMENTO (DESENVOLVIMENTO)</h2>
+          <p>18032 - Ano Letivo 2019</p>
+        </div>
+        <div incluir-html="src/menu-usuario.html" class="menu-usuario"></div>
+        <button class="menu-usuario__botao-sair">
+          <img src="./ativos/icones/sair-b.svg"> Sair
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <footer incluir-html="src/rodape.html" class="rodape"></footer>
+
+  <div class="menu-lateral__sobreposicao" onclick="fecharMenuLateral()">
+  </div>
+  <script>incluirHTML()</script>
+</body>
+
+</html>
