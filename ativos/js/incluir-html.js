@@ -1,5 +1,5 @@
 function incluirHTML() {
-  var z, i, elementos, arquivo, xhttp;
+  var z, i, elementos, arquivo, requisicao;
 
   /*Loop em todos os elementos html do arquivo:*/
   z = document.getElementsByTagName("*");
@@ -10,8 +10,8 @@ function incluirHTML() {
     arquivo = elementos.getAttribute("incluir-html");
     if (arquivo) {
       /*Solicitação via HTTP usando o valor do atributo como o nome do arquivo*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
+      requisicao = new XMLHttpRequest();
+      requisicao.onreadystatechange = function () {
         if (this.readyState == 4) {
           if (this.status == 200) { elementos.innerHTML = this.responseText; }
           if (this.status == 404) { elementos.innerHTML = "Página não encontrada."; }
@@ -21,8 +21,8 @@ function incluirHTML() {
           incluirHTML();
         }
       }
-      xhttp.open("GET", arquivo, true);
-      xhttp.send();
+      requisicao.open("GET", arquivo, true);
+      requisicao.send();
 
       return;
     }

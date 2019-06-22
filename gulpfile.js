@@ -4,10 +4,10 @@ var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 let cleanCSS = require('gulp-clean-css');
 
-gulp.task('minificar-css', () => {
-  return gulp.src('./css/estilo.css')
+gulp.task('css', ['sass'], () => {
+  return gulp.src('./ativos/css/estilo.css')
     .pipe(cleanCSS())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./ativos/css/'));
 });
 
 sass.compiler = require('node-sass');
@@ -15,15 +15,15 @@ sass.compiler = require('node-sass');
 gulp.task('sass', () => {
   return gulp.src('sass/estilo.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css/'))
+    .pipe(gulp.dest('./ativos/css/'))
 });
 
-gulp.task('default', ['sass', 'minificar-css'], function () {
+gulp.task('default', ['css'], function () {
   browserSync.init({
     server: {
       baseDir: './'
     }
   });
 
-  return gulp.watch(['./sass/**/*.scss', 'index.html'], ['sass', 'minificar-css']).on('change', reload);
+  return gulp.watch(['./sass/**/*.scss', 'index.html'], ['css']).on('change', reload);
 });

@@ -18,11 +18,13 @@
 
 .menu-usuario__nome-usuario {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fonte-seminegrito;
+  color: $cor-2;
 }
 
 .menu-usuario__usuario-descricao {
   font-size: 14px;
+  color: $cor-2;
 }
 
 .menu-usuario__botao-sair {
@@ -33,7 +35,7 @@
   border: 0;
   padding: 0 16px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: $fonte-seminegrito;
   height: 48px;
   margin: auto 8px;
   border-radius: 24px;
