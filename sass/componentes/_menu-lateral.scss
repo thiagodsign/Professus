@@ -72,7 +72,8 @@
         margin-right: 16px;
         height: 24px;
       }
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         opacity: 1;
         &::after {
           background-color: rgba($cor-branca, 0.1);
@@ -90,11 +91,34 @@
       }
     }
   }
+}
+
+.menu-lateral_aluno {
   .menu-lateral__item_ativo {
     a {
       background: rgba($cor-branca, 0.1);
       opacity: 1;
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
+        opacity: 1;
+        &::after {
+          background-color: $cor-5;
+        }
+      }
+      &::after {
+        background-color: $cor-5;
+      }
+    }
+  }
+}
+
+.menu-lateral_professor {
+  .menu-lateral__item_ativo {
+    a {
+      background: rgba($cor-branca, 0.1);
+      opacity: 1;
+      &:hover,
+      &:focus {
         opacity: 1;
         &::after {
           background-color: $cor-3;

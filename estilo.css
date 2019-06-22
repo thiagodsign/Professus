@@ -186,15 +186,26 @@
         width: 4px;
         border-radius: 10px;
         height: calc(100% - 8px); }
-  .menu-lateral__itens-do-menu .menu-lateral__item_ativo a {
-    background: rgba(255, 255, 255, 0.1);
+
+.menu-lateral_aluno .menu-lateral__item_ativo a {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 1; }
+  .menu-lateral_aluno .menu-lateral__item_ativo a:hover, .menu-lateral_aluno .menu-lateral__item_ativo a:focus {
     opacity: 1; }
-    .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:hover, .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:focus {
-      opacity: 1; }
-      .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:hover::after, .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:focus::after {
-        background-color: #ffb200; }
-    .menu-lateral__itens-do-menu .menu-lateral__item_ativo a::after {
+    .menu-lateral_aluno .menu-lateral__item_ativo a:hover::after, .menu-lateral_aluno .menu-lateral__item_ativo a:focus::after {
+      background-color: #00c900; }
+  .menu-lateral_aluno .menu-lateral__item_ativo a::after {
+    background-color: #00c900; }
+
+.menu-lateral_professor .menu-lateral__item_ativo a {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 1; }
+  .menu-lateral_professor .menu-lateral__item_ativo a:hover, .menu-lateral_professor .menu-lateral__item_ativo a:focus {
+    opacity: 1; }
+    .menu-lateral_professor .menu-lateral__item_ativo a:hover::after, .menu-lateral_professor .menu-lateral__item_ativo a:focus::after {
       background-color: #ffb200; }
+  .menu-lateral_professor .menu-lateral__item_ativo a::after {
+    background-color: #ffb200; }
 
 .menu-lateral__sobreposicao {
   position: fixed;
