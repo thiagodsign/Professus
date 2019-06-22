@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilo/estilo.css">
+  <link rel="stylesheet" href="css/estilo.css">
   <link rel="shortcut icon" href="icones/favicon.png" />
   <script src="js/menu-lateral.js"></script>
   <script src="js/incluir-html.js"></script>
@@ -16,8 +16,8 @@
   <header class="cabecalho">
     <div class="cabecalho__container-primario">
       <button class="cabecalho__botao-hamburguer" onclick="abrirMenulateral()">
-          <img src="./icones/hamburguer.svg" aria-hidden="true">
-        </button>
+        <img src="./icones/hamburguer.svg" aria-hidden="true">
+      </button>
       <a class="cabecalho__logo">
         <img src="./icones/logo-professus.svg" aria-hidden="true">
       </a>
@@ -30,20 +30,21 @@
     <div class="cabecalho__container-secundario">
       <div incluir-html="src/menu-usuario.html" class="menu-usuario"></div>
       <button class="menu-usuario__botao-sair">
-        <img src="./icones/sair.svg"> Sair
+        <img src="./icones/sair.svg">
+        Sair
       </button>
     </div>
   </header>
-  
+
   <!-- <div incluir-html="src/acesso-professor.html" class="menu-inicial"></div> -->
   <div incluir-html="src/acesso-aluno.html" class="menu-inicial"></div>
-  
+
   <footer class="rodape">
     <a class="rodape__link" href="http://www.saeinfo.net.br/" target="_blank">
       <img class="rodape__logo" src="icones/logo-sae.png">
     </a>
   </footer>
-  
+
   <div class="menu-lateral__sobreposicao" onclick="fecharMenuLateral()">
   </div>
 

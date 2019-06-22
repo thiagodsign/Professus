@@ -5,7 +5,7 @@ var reload = browserSync.reload;
 let cleanCSS = require('gulp-clean-css');
 
 gulp.task('minificar-css', () => {
-  return gulp.src('estilo.css')
+  return gulp.src('./css/estilo.css')
     .pipe(cleanCSS())
     .pipe(gulp.dest('./'));
 });
@@ -15,7 +15,7 @@ sass.compiler = require('node-sass');
 gulp.task('sass', () => {
   return gulp.src('sass/estilo.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./estilo/'))
+    .pipe(gulp.dest('./css/'))
 });
 
 gulp.task('default', ['sass', 'minificar-css'], function () {
