@@ -1,8 +1,8 @@
 function incluirHTML() {
   var z, i, elementos, arquivo, requisicao;
 
-  /*Loop em todos os elementos html do arquivo:*/
-  z = document.getElementsByTagName("*");
+  /*Loop nos elementos q têm o atributo:*/
+  z = document.querySelectorAll("[incluir-html]");
   for (i = 0; i < z.length; i++) {
     elementos = z[i];
 
