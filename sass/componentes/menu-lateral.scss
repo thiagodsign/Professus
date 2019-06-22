@@ -38,7 +38,7 @@
   }
 }
 
-.menu-lateral__container {
+.menu-lateral__corpo {
   height: calc(100% - 84px);
   overflow-y: auto;
   display: flex;
@@ -175,6 +175,7 @@
   .menu-usuario__nome-usuario,
   .menu-usuario__usuario-descricao {
     color: $cor-branca;
+    max-width: 200px;
   }
   .menu-usuario__icone-usuario {
     background: rgba($cor-branca, 0.2);

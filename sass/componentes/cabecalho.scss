@@ -60,7 +60,7 @@
 .cabecalho__container-secundario {
   display: flex;
   height: 100%;
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 720px) {
     display: none;
   }
 }

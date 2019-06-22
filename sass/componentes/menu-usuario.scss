@@ -8,7 +8,7 @@
 .menu-usuario__icone-usuario {
   display: flex;
   height: 40px;
-  width: 40px;
+  min-width: 40px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,10 @@
   font-size: 16px;
   font-weight: $fonte-seminegrito;
   color: $cor-2;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 .menu-usuario__usuario-descricao {
