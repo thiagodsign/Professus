@@ -52,9 +52,15 @@
     font-size: 14px;
     font-weight: 400;
   }
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .cabecalho__container-secundario {
   display: flex;
   height: 100%;
+  @media screen and (max-width: 540px) {
+    display: none;
+  }
 }

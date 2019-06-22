@@ -49,13 +49,19 @@
   .cabecalho__descricao p {
     font-size: 14px;
     font-weight: 400; }
+  @media screen and (max-width: 1000px) {
+    .cabecalho__descricao {
+      display: none; } }
 
 .cabecalho__container-secundario {
   display: flex;
   height: 100%; }
+  @media screen and (max-width: 540px) {
+    .cabecalho__container-secundario {
+      display: none; } }
 
 .pagina {
-  background-color: rgba(0, 98, 178, 0.05); }
+  background-color: rgba(0, 98, 178, 0.08); }
 
 .menu-usuario {
   display: flex;
@@ -111,7 +117,8 @@
   left: -320px;
   z-index: 999;
   height: 100%;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   transition: all ease 0.4s; }
 
 .menu-lateral__cabecalho {
@@ -129,7 +136,7 @@
     align-items: center;
     cursor: pointer;
     justify-content: center; }
-    .menu-lateral__cabecalho .menu-lateral__botao-fechar img {
+    .menu-lateral__cabecalho .menu-lateral__botao-fechar .menu-lateral__icone {
       height: 16px;
       width: 16px; }
     .menu-lateral__cabecalho .menu-lateral__botao-fechar:hover, .menu-lateral__cabecalho .menu-lateral__botao-fechar:focus {
@@ -141,6 +148,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+
+.menu-lateral__logo-cabecalho {
+  height: 20px;
+  margin: auto 0; }
 
 .menu-lateral__itens-do-menu {
   list-style: none;
@@ -159,12 +170,12 @@
       color: #fff;
       font-weight: 600;
       opacity: 0.7; }
-      .menu-lateral__itens-do-menu .menu-lateral__item a img {
-        margin-right: 8px;
+      .menu-lateral__itens-do-menu .menu-lateral__item a .menu-lateral__icone {
+        margin-right: 16px;
         height: 24px; }
-      .menu-lateral__itens-do-menu .menu-lateral__item a:hover {
+      .menu-lateral__itens-do-menu .menu-lateral__item a:hover, .menu-lateral__itens-do-menu .menu-lateral__item a:focus {
         opacity: 1; }
-        .menu-lateral__itens-do-menu .menu-lateral__item a:hover::after {
+        .menu-lateral__itens-do-menu .menu-lateral__item a:hover::after, .menu-lateral__itens-do-menu .menu-lateral__item a:focus::after {
           background-color: rgba(255, 255, 255, 0.1); }
       .menu-lateral__itens-do-menu .menu-lateral__item a::after {
         content: "";
@@ -178,9 +189,9 @@
   .menu-lateral__itens-do-menu .menu-lateral__item_ativo a {
     background: rgba(255, 255, 255, 0.1);
     opacity: 1; }
-    .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:hover {
+    .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:hover, .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:focus {
       opacity: 1; }
-      .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:hover::after {
+      .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:hover::after, .menu-lateral__itens-do-menu .menu-lateral__item_ativo a:focus::after {
         background-color: #ffb200; }
     .menu-lateral__itens-do-menu .menu-lateral__item_ativo a::after {
       background-color: #ffb200; }
@@ -194,13 +205,17 @@
   width: 100vw;
   background: rgba(0, 0, 0, 0.5); }
 
+.menu-lateral__sobreposicao_ativo {
+  display: flex; }
+
 .menu-lateral_ativo {
   left: 0; }
-  .menu-lateral_ativo ~ .menu-lateral__sobreposicao {
-    display: flex; }
 
 .menu-lateral__container-usuario {
   padding: 24px; }
+  @media screen and (min-width: 1000px) {
+    .menu-lateral__container-usuario {
+      display: none; } }
   .menu-lateral__container-usuario .menu-lateral__descricao-instituicao {
     color: #fff; }
     .menu-lateral__container-usuario .menu-lateral__descricao-instituicao h2 {
@@ -224,3 +239,50 @@
     color: #fff; }
     .menu-lateral__container-usuario .menu-usuario__botao-sair:hover, .menu-lateral__container-usuario .menu-usuario__botao-sair:focus {
       background: rgba(255, 255, 255, 0.15); }
+
+.menu-inicial {
+  width: 100%;
+  min-height: calc(100vh - 190px);
+  border: none; }
+
+.menu-inicial__itens {
+  margin: 8px auto;
+  max-width: 1216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 8px; }
+
+.menu-inicial__link {
+  margin: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 224px;
+  height: 140px;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #2b4165;
+  font-weight: 600;
+  transition: all ease 0.2s; }
+  .menu-inicial__link .menu-inicial__icone-item {
+    margin-bottom: 16px; }
+  .menu-inicial__link:hover, .menu-inicial__link:focus {
+    transform: translate(0, -2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
+
+.menu-inicial__icone-item {
+  height: 48px;
+  margin-bottom: 24px; }
+
+.rodape {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px; }
+
+.rodape__logo {
+  height: 48px; }
