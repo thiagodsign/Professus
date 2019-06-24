@@ -6,7 +6,7 @@ function incluirHTML() {
   for (i = 0; i < z.length; i++) {
     elementos = z[i];
 
-    /*Busca de elementos com o atributo incluir-html*/
+    /*Pega o valor que estã no atributo*/
     arquivo = elementos.getAttribute("incluir-html");
     if (arquivo) {
       /*Solicitação via HTTP usando o valor do atributo como o nome do arquivo*/
